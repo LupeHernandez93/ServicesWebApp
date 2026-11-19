@@ -1,0 +1,75 @@
+﻿namespace ServicesWebApp.Entities.SupplierWebApp
+{
+    public class vtPreInvoice
+    {
+        public int IdPreInvoice { get; set; }
+        public int IdPerson { get; set; }
+        public int IdCompany { get; set; }
+        public string? RFCCompany { get; set; }
+        public string CompanyName { get; set; }
+        public int IdBranchCompany { get; set; }
+        public string? RFCBranchCompany { get; set; }
+        public string? BranchCompanyName { get; set; }
+        public int IdBusinessUnit { get; set; }
+        public string? BusinessUnitName { get; set; }
+        public int IdStatus { get; set; }
+        public string StatusName { get; set; }
+        public string KeyID { get; set; }
+        public string UUID { get; set; }
+        public string? Serie { get; set; }
+        public string? Folio { get; set; }
+        public decimal SubTotal { get; set; }
+        public decimal? Discount { get; set; }
+        public decimal? TransferredTax { get; set; }
+        public decimal? RetainedTax { get; set; }
+        public decimal Total { get; set; }
+        public string Currency { get; set; }
+        public decimal? ExchangeRate { get; set; }
+        public string IdReceiptType { get; set; }
+        public string? ReceiptTypeName { get; set; }
+        public string IdPaymentMethod { get; set; }
+        public string? PaymentMethodName { get; set; }
+        public string? IdFormPayment { get; set; }
+        public string? FormPaymentName { get; set; }
+        public string? PaymentTerms { get; set; }
+        public string? IdExport { get; set; }
+        public string? ExportName { get; set; }
+        public string? PlaceExpedition { get; set; }
+        public int? IdSupplier { get; set; }
+        public string Emitter_RFC { get; set; }
+        public string Emitter_Name { get; set; }
+        public string? Emitter_IdFiscalRegime { get; set; }
+        public string? Emitter_FiscalRegimeName { get; set; }
+        public string Receptor_RFC { get; set; }
+        public string Receptor_Name { get; set; }
+        public string? Receptor_TaxDomicile { get; set; }
+        public string? Receptor_IdFiscalRegime { get; set; }
+        public string? Receptor_FiscalRegimeName { get; set; }
+        public string Receptor_IdUseCFDI { get; set; }
+        public string? UseCFDIName { get; set; }
+        public DateTime InvoiceDate { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public string? PurchaseOrder { get; set; }
+        public string? Comments { get; set; }
+        public string? XML_FileName { get; set; }
+        public string? XML_OriginalFileName { get; set; }
+        public double? XML_Length { get; set; }
+        public string? XML_Path { get; set; }
+        public string? XML_Content { get; set; }
+        public string? PDF_FileName { get; set; }
+        public double? PDF_Length { get; set; }
+        public string? PDF_Path { get; set; }
+        public DateTime? PDF_CreatedDate { get; set; }
+        public string? SUPPORT_FileName { get; set; }
+        public double? SUPPORT_Length { get; set; }
+        public string? SUPPORT_Path { get; set; }
+        public DateTime? SUPPORT_CreatedDate { get; set; }
+        public DateTime? ValidationDate { get; set; }
+        public string? ValidationMessage { get; set; }
+        public DateTime? CompleteDate { get; set; }
+        public string Version { get; set; }
+        public string CreatedByTypeAccount { get; set; }
+        public string? CreatedByFullname { get; set; }
+        public string? CreatedByEmail { get; set; }
+    }
+}

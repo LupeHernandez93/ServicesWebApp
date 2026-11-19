@@ -1,0 +1,1311 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "QMAX - Web API",
+    "description": "API para obtener información del Portal de Aplicaciones QMAX",
+    "termsOfService": "https://apps.qmaxmexico.com",
+    "contact": {
+      "name": "Jose Guadalupe Hernandez Lopez (Developer)",
+      "email": "jose.hernandez@qmaxmexico.com"
+    },
+    "version": "1.0"
+  },
+  "paths": {
+    "/apiQMAX/Autentication/Validar": {
+      "post": {
+        "tags": [
+          "Autentication"
+        ],
+        "summary": "Ingrese el usuario y la contraseña correctos para generar un token de autenticazion.",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": { }
+            },
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Catalogs/Position": {
+      "post": {
+        "tags": [
+          "Catalogs"
+        ],
+        "summary": "Sincroniza el catalogo de los puestos de los dos portales(Antigüo-Nuevo).",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": { }
+            },
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtPerson"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Catalogs/BusinessUnit": {
+      "post": {
+        "tags": [
+          "Catalogs"
+        ],
+        "summary": "Sincroniza el catalogo de las unidades de negocios de los dos portales(Antigüo-Nuevo).",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": { }
+            },
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtPerson"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Catalogs/BranchCompany": {
+      "post": {
+        "tags": [
+          "Catalogs"
+        ],
+        "summary": "Sincroniza el catalogo de las sucursales o compañias de los dos portales(Antigüo-Nuevo).",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": { }
+            },
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtPerson"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Catalogs/Departaments": {
+      "post": {
+        "tags": [
+          "Catalogs"
+        ],
+        "summary": "Sincroniza el catalogo de los departamentos de los dos portales(Antigüo-Nuevo).",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": { }
+            },
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtPerson"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Employee/Synchronize": {
+      "post": {
+        "tags": [
+          "Employee"
+        ],
+        "summary": "Sincroniza la informacion de los usuarios en los 2 portales(Antigüo-Nuevo).",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": { }
+            },
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtPerson"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Employee/GetAll": {
+      "get": {
+        "tags": [
+          "Employee"
+        ],
+        "summary": "Devuelve una lista de todos los empleados con sus datos.",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtPerson"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Employee/{IdPerson}": {
+      "get": {
+        "tags": [
+          "Employee"
+        ],
+        "summary": "Obtiene los datos del empleado solicitado por parametro.",
+        "parameters": [
+          {
+            "name": "idPerson",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtPerson"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Invoice/StartDate={StartDate};EndDate={EndDate};SearchBy={SearchBy};": {
+      "get": {
+        "tags": [
+          "Invoice"
+        ],
+        "summary": "Obtiene una lista facturas con un rango de fechas determinado.",
+        "parameters": [
+          {
+            "name": "StartDate",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "EndDate",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SearchBy",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtInvoice"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Supplier/GetAll": {
+      "get": {
+        "tags": [
+          "Supplier"
+        ],
+        "summary": "Devuelve una lista de todos los proveedores con sus datos.",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtSupplier"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Supplier/CatTypeSupplier": {
+      "get": {
+        "tags": [
+          "Supplier"
+        ],
+        "summary": "Devuelve el catálogo de tipos de proveedores y los documentos requeridos para cada uno de ellos.",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtTypeSupplier"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/apiQMAX/Supplier/GetDocumentsSupport": {
+      "get": {
+        "tags": [
+          "Supplier"
+        ],
+        "summary": "Obtiene los documentos de soporte existentes para cada proveedor.",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DtSupplier"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DtInvoice": {
+        "type": "object",
+        "properties": {
+          "idInvoice": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idPreInvoice": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idPerson": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCompany": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rfcCompany": {
+            "type": "string",
+            "nullable": true
+          },
+          "companyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idBranchCompany": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rfcBranchCompany": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchCompanyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idBusinessUnit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "businessUnitName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statusName": {
+            "type": "string",
+            "nullable": true
+          },
+          "keyID": {
+            "type": "string",
+            "nullable": true
+          },
+          "uuid": {
+            "type": "string",
+            "nullable": true
+          },
+          "serie": {
+            "type": "string",
+            "nullable": true
+          },
+          "folio": {
+            "type": "string",
+            "nullable": true
+          },
+          "subTotal": {
+            "type": "number",
+            "format": "double"
+          },
+          "discount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "transferredTax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "retainedTax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "total": {
+            "type": "number",
+            "format": "double"
+          },
+          "currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "exchangeRate": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "idReceiptType": {
+            "type": "string",
+            "nullable": true
+          },
+          "receiptTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idPaymentMethod": {
+            "type": "string",
+            "nullable": true
+          },
+          "paymentMethodName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idFormPayment": {
+            "type": "string",
+            "nullable": true
+          },
+          "formPaymentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "paymentTerms": {
+            "type": "string",
+            "nullable": true
+          },
+          "idExport": {
+            "type": "string",
+            "nullable": true
+          },
+          "exportName": {
+            "type": "string",
+            "nullable": true
+          },
+          "placeExpedition": {
+            "type": "string",
+            "nullable": true
+          },
+          "idSupplier": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "emitter_RFC": {
+            "type": "string",
+            "nullable": true
+          },
+          "emitter_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "emitter_IdFiscalRegime": {
+            "type": "string",
+            "nullable": true
+          },
+          "emitter_FiscalRegimeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "receptor_RFC": {
+            "type": "string",
+            "nullable": true
+          },
+          "receptor_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "receptor_TaxDomicile": {
+            "type": "string",
+            "nullable": true
+          },
+          "receptor_IdFiscalRegime": {
+            "type": "string",
+            "nullable": true
+          },
+          "receptor_FiscalRegimeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "receptor_IdUseCFDI": {
+            "type": "string",
+            "nullable": true
+          },
+          "useCFDIName": {
+            "type": "string",
+            "nullable": true
+          },
+          "invoiceDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "purchaseOrder": {
+            "type": "string",
+            "nullable": true
+          },
+          "receptionOrder": {
+            "type": "string",
+            "nullable": true
+          },
+          "jsonPurchaseOrder": {
+            "type": "string",
+            "nullable": true
+          },
+          "comments": {
+            "type": "string",
+            "nullable": true
+          },
+          "xmL_FileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "xmL_OriginalFileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "xmL_Length": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "xmL_Path": {
+            "type": "string",
+            "nullable": true
+          },
+          "xmL_Content": {
+            "type": "string",
+            "nullable": true
+          },
+          "pdF_FileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "pdF_Length": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pdF_Path": {
+            "type": "string",
+            "nullable": true
+          },
+          "pdF_CreatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "supporT_FileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "supporT_Length": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "supporT_Path": {
+            "type": "string",
+            "nullable": true
+          },
+          "supporT_CreatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdByTypeAccount": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdByFullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdByEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "stoppedBy": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "stoppedByFullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "stoppedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "stoppedReason": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvedBy": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "approvedByFullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "approvedReason": {
+            "type": "string",
+            "nullable": true
+          },
+          "rejectedBy": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "rejectedByFullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "rejectedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "rejectedReason": {
+            "type": "string",
+            "nullable": true
+          },
+          "canceledBy": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "canceledByFullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "canceledDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "canceledReason": {
+            "type": "string",
+            "nullable": true
+          },
+          "paidBy": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "paidByFullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "paidDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "paidReason": {
+            "type": "string",
+            "nullable": true
+          },
+          "paidCEPFileXML": {
+            "type": "string",
+            "nullable": true
+          },
+          "paidCEPFilePDF": {
+            "type": "string",
+            "nullable": true
+          },
+          "repBy": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "repByFullname": {
+            "type": "string",
+            "nullable": true
+          },
+          "repDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "repFileXML": {
+            "type": "string",
+            "nullable": true
+          },
+          "repFilePDF": {
+            "type": "string",
+            "nullable": true
+          },
+          "cepAttachments": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "repAttachments": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "historyData": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DtPerson": {
+        "type": "object",
+        "properties": {
+          "idPerson": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "departmentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "positionName": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "employeeNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "personalMail": {
+            "type": "string",
+            "nullable": true
+          },
+          "curp": {
+            "type": "string",
+            "nullable": true
+          },
+          "nss": {
+            "type": "string",
+            "nullable": true
+          },
+          "bloodType": {
+            "type": "string",
+            "nullable": true
+          },
+          "antiquity": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "startDateJob": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDateDateJob": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "personalPhone": {
+            "type": "string",
+            "nullable": true
+          },
+          "emergencyNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "allergies": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "nationality": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthdate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "civilStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DtSupplier": {
+        "type": "object",
+        "properties": {
+          "idSupplier": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rfc": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "nickname": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "exteriorNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "interiorNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idCountry": {
+            "type": "string",
+            "nullable": true
+          },
+          "countryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idMunicipality": {
+            "type": "string",
+            "nullable": true
+          },
+          "municipalityName": {
+            "type": "string",
+            "nullable": true
+          },
+          "idLocation": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "postalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "allowUploadInvoice": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "allowUploadInvoiceWithoutOC": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "allowUploadInvoiceSupportFile": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DtTypeSupplier": {
+        "type": "object",
+        "properties": {
+          "idTypeSupplier": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Jwt Authorization",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

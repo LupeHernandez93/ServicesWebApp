@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Lupe\Deployee\ApiWebServicesRH</_PublishTargetUrl>
+    <History>True|2026-02-10T22:12:09.8480215Z||;True|2026-02-10T13:51:21.2650021-06:00||;True|2026-01-19T10:23:25.6822445-06:00||;True|2026-01-19T10:03:08.4099252-06:00||;True|2024-05-17T10:51:50.0767826-06:00||;True|2024-02-06T09:37:19.7741521-06:00||;True|2024-02-06T09:07:43.0051762-06:00||;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+</Project>

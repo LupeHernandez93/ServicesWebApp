@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServicesWebApp</name>
+    </assembly>
+    <members>
+        <member name="M:ServicesWebApp.Controllers.AutenticationController.Validar(System.Object)">
+            <summary>
+            Ingrese el usuario y la contraseña correctos para generar un token de autenticazion.
+            </summary>
+            <returns>Jwt Token .</returns>
+        </member>
+        <member name="M:ServicesWebApp.Controllers.CatalogsController.Position(System.Object)">
+            <summary>
+            Sincroniza el catalogo de los puestos de los dos portales(Antigüo-Nuevo).
+            </summary>
+            <returns>La descripcion del puesto actualizado.</returns>
+            POST: apiQMAX/Catalogs/Position
+        </member>
+        <member name="M:ServicesWebApp.Controllers.CatalogsController.BusinessUnit(System.Object)">
+            <summary>
+            Sincroniza el catalogo de las unidades de negocios de los dos portales(Antigüo-Nuevo).
+            </summary>
+            <returns>La descripcion del puesto actualizado.</returns>
+            POST: apiQMAX/Catalogs/BusinessUnit
+        </member>
+        <member name="M:ServicesWebApp.Controllers.CatalogsController.BranchCompany(System.Object)">
+            <summary>
+            Sincroniza el catalogo de las sucursales o compañias de los dos portales(Antigüo-Nuevo).
+            </summary>
+            <returns>La descripcion de la sucursal actualizado.</returns>
+            POST: apiQMAX/Catalogs/BranchCompany
+        </member>
+        <member name="M:ServicesWebApp.Controllers.CatalogsController.Departaments(System.Object)">
+            <summary>
+            Sincroniza el catalogo de los departamentos de los dos portales(Antigüo-Nuevo).
+            </summary>
+            <returns>La descripcion del puesto actualizado.</returns>
+            POST: apiQMAX/Catalogs/Departaments
+        </member>
+        <member name="M:ServicesWebApp.Controllers.EmployeeController.Synchronize(System.Object)">
+            <summary>
+            Sincroniza la informacion de los usuarios en los 2 portales(Antigüo-Nuevo).
+            </summary>
+            <returns>La descripcion del puesto actualizado.</returns>
+            POST: apiQMAX/Employee/Synchronize
+        </member>
+        <member name="M:ServicesWebApp.Controllers.EmployeeController.GetAll">
+            <summary>
+            Devuelve una lista de todos los empleados con sus datos.
+            </summary>
+            <returns>Una lista de empleados.</returns>
+            GET: apiC5M/Employee/GetAll
+        </member>
+        <member name="M:ServicesWebApp.Controllers.EmployeeController.Get(System.Int32)">
+            <summary>
+            Obtiene los datos del empleado solicitado por parametro.
+            </summary>
+            <returns>La entidad empleado.</returns>
+            GET: apiC5M/Employee/{IdPerson}
+        </member>
+        <member name="M:ServicesWebApp.Controllers.InvoiceController.GetInvoices(System.String,System.String,System.String)">
+            <summary>
+            Obtiene una lista facturas con un rango de fechas determinado.
+            </summary>
+        </member>
+        <member name="M:ServicesWebApp.Controllers.SupplierController.GetAll">
+            <summary>
+            Devuelve una lista de todos los proveedores con sus datos.
+            </summary>
+        </member>
+        <member name="M:ServicesWebApp.Controllers.SupplierController.CatTypeSupplier">
+            <summary>
+            Devuelve el catálogo de tipos de proveedores y los documentos requeridos para cada uno de ellos.
+            </summary>
+        </member>
+        <member name="M:ServicesWebApp.Controllers.SupplierController.GetDocumentsSupport">
+            <summary>
+            Obtiene los documentos de soporte existentes para cada proveedor.
+            </summary>
+        </member>
+        <member name="M:ServicesWebApp.Services.ConfigureSwaggerOptions.Configure(System.String,Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+            Configure Swagger Options. Inherited from the Interface
+            </summary>
+            <param name="name"></param>
+            <param name="options"></param>
+        </member>
+        <member name="M:ServicesWebApp.Services.ConfigureSwaggerOptions.CreateVersionInfo(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiVersionDescription)">
+            <summary>
+            Create information about the version of the API
+            </summary>
+            <param name="description"></param>
+            <returns>Information about the API</returns>
+        </member>
+    </members>
+</doc>

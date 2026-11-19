@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServicesWebApp</name>
+    </assembly>
+    <members>
+        <member name="M:ServicesWebApp.Controllers.EmployeeController.GetAll">
+            <summary>
+            Obtiene una lista de todos los empleados.
+            </summary>
+            <returns>Una lista de empleados.</returns>
+        </member>
+        <member name="M:ServicesWebApp.Controllers.EmployeeController.Get(System.Int32)">
+            <summary>
+            Obtiene el empleado solictado por parametro.
+            </summary>
+            <returns>La entidad empleado.</returns>
+        </member>
+        <member name="M:ServicesWebApp.Services.ConfigureSwaggerOptions.Configure(System.String,Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+            Configure Swagger Options. Inherited from the Interface
+            </summary>
+            <param name="name"></param>
+            <param name="options"></param>
+        </member>
+        <member name="M:ServicesWebApp.Services.ConfigureSwaggerOptions.CreateVersionInfo(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiVersionDescription)">
+            <summary>
+            Create information about the version of the API
+            </summary>
+            <param name="description"></param>
+            <returns>Information about the API</returns>
+        </member>
+    </members>
+</doc>

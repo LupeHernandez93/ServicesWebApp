@@ -1,0 +1,6 @@
+@ServicesWebApp_HostAddress = https://localhost:7023
+
+GET {{ServicesWebApp_HostAddress}}/employee/
+Accept: application/json
+
+###
